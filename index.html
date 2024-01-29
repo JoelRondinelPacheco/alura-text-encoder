@@ -16,36 +16,28 @@
     </header>
 
     <main>
-        <section>
-            <div>
-                <textarea name="decripted" id="" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+        <section id="containermessage">
+            <div class="input-message">
+                <textarea name="decripted" id="message" placeholder="Ingrese el texto aqui"></textarea>
             </div>
 
             <div class="details">
-
+                <img src="./icons/Vectorwarning.svg" alt="warning icon"><p>Solo letras minúsculas y sin acentos</p>
             </div>
 
-            <div class=""> 
-                <button>Encriptar</button>
-                <button>Desencriptar </button>
+            <div class="buttons"> 
+                <button class="primary" id="encrypt-btn">Encriptar</button>
+                <button class="secondary" id="decrypt-btn">Desencriptar </button>
             </div>
         </section>
 
-        <section>
-            <section class="no-message">
+        <section id="encriptedmessage">
+            <div>
                 <img src="./images/encripted/Muñeconomessage.png" alt="no message found" class="no-message-img">
                 <h3 class="no-message-title">Ningún mensaje fue encontrado</h3>
                 <p class="no-message-description">Ingrese el texto que desees encriptar o desencriptar</p>
-            </section>
-
-            <section class="message"> 
-                <p></p>
-            </section>
+            </div>
         </section>
     </main>
-
-    <footer>
-
-    </footer>
 </body>
 </html>
