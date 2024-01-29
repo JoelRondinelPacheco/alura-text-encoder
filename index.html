@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>En developer Joel</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/root.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <img src="./icons/navbar/Vectoralura.svg" alt="alura icon">
+        </nav>
+    </header>
+
+    <main>
+        <section id="containermessage">
+            <div class="input-message">
+                <textarea name="decripted" id="message" placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+
+            <div class="details">
+                <img src="./icons/Vectorwarning.svg" alt="warning icon"><p>Solo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div class="buttons"> 
+                <button class="primary" id="encrypt-btn">Encriptar</button>
+                <button class="secondary" id="decrypt-btn">Desencriptar </button>
+            </div>
+        </section>
+
+        <section id="encriptedmessage" class="flex-center">
+            <div id="no-message-container">
+                <img src="./images/encripted/Muñeconomessage.png" alt="no message found" class="no-message-img">
+                <h3 class="no-message-title">Ningún mensaje fue encontrado</h3>
+                <p class="no-message-description">Ingrese el texto que desees encriptar o desencriptar</p>
+            </div>
+
+            <div id="message-container" class="hidden">
+                <p id="encrypted-message-container"></p>
+                <button id="copy-btn">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="./scripts/main.js"></script>
 </body>
 </html>
