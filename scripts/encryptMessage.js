@@ -1,9 +1,8 @@
 export const encryptMessage = (message) => {
-    let messageLowerCase = message.toLowerCase();
     let encryptedMessage = "";
 
     for (let i = 0; i < message.length; i++) {
-        switch (messageLowerCase[i]) {
+        switch (message[i]) {
             case "a":
                 encryptedMessage = encryptedMessage.concat("ai")
                 break;
@@ -20,7 +19,7 @@ export const encryptMessage = (message) => {
                 encryptedMessage = encryptedMessage.concat("ufat")
                 break;
             default:
-                encryptedMessage = encryptedMessage.concat(messageLowerCase[i])
+                encryptedMessage = encryptedMessage.concat(message[i])
         }
     }
 
