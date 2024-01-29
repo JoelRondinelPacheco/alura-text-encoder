@@ -23,6 +23,13 @@ nav {
     padding-bottom: 48px;
 }
 
+/******* UTILITY *******/
+
+.hidden {
+    display: none;
+}
+
+/******* UTILITY *******/
 
 
 /******* MESSAGE *******/
